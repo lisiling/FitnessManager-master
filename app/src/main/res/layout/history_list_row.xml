@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/dateActivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forward"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/forward" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/nbSteps"
+        android:textColor="@android:color/tab_indicator_text"
+        android:layout_below="@+id/dateActivity"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activityType1"
+        android:src="@drawable/sport_shoes_icon"
+        android:visibility="gone"
+        android:layout_above="@+id/nbSteps"
+        android:layout_toStartOf="@+id/forward" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activityType2"
+        android:layout_above="@+id/nbSteps"
+        android:layout_toStartOf="@+id/activityType1"
+        android:src="@drawable/dumbbell_in_hand_small"
+        android:visibility="gone"/>
+</RelativeLayout>
